@@ -15,8 +15,7 @@
     color: #28272D;
     border: none;
     padding: 9px 60px;
-    border-radius: 4px;
-    justify-content: flex-start;
+    border-radius: 8px;
 }
 .logo{
    justify-content: center;
@@ -55,4 +54,40 @@
     margin-left: 1rem;
     padding: 0px;
     margin-right: 1rem;
+}
+
+/* section big-image */
+.big-image{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.firstsection{
+    align-content: center;
+    
+}
+.boxes{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ingredients {
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap
+}
+.vline{
+    border: 1px solid #EAEAEA;
+}
+
+.hline{
+    border: 1px solid #EAEAEA;
 }
