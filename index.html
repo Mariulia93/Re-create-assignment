@@ -10,9 +10,9 @@
 <body>
 <header>
     <nav class="top-nav">
-        <button id="search-bar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <button id="search-bar"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-</svg>Search by recipe or ingredients...</button>
+</svg> Search by recipe or ingredients...</button>
         <p class="logo"><strong>PUNCH</strong>FORK</p>
         <button id="log-in">Log-in</button>
         <button id="sign-up">Sign-up</button>
@@ -27,14 +27,14 @@
 <section class="big-image">
     
     <div class="firstsection"> 
-        <img class="imgbig" src="img/bbqpicture.jpg" alt="barbecue"height="600px">
-        <h1>Barbecue Beer - Skewers</h1>
-        <p>NOT VEGAN - 1 HR 15 MINS</p>
-    </div>
+        <img class="imgbig" src="img/bbqpicture.jpg" alt="barbecue">
+        <h1 class="firsttext">Barbecue Beer - Skewers</h1>
+        <p class="firsttext">NOT VEGAN - 1 HR 15 MINS</p>
+    
     
     <div class="boxes"> 
         <div class="box"> 
-            <p>63/100 Rating</p>
+            <p> <strong>63</strong>/100 Rating</p>
         </div>
         
         <div class="vline"></div>
@@ -48,21 +48,49 @@
         <div class="box"> 
             <p>6 Ingredients</p> 
         </div>
+
     </div>
     
     <div class="ingredients">
-        <h3> Ingredients</h3>
+        <hr class="hline">
+        <div class=ingredientsheader> 
+            <h3>Ingredients</h3>
+            <button class="serves">Serves 8-12</button>
+        </div>  
         <p>1 large purple cabbage (about 3 1/2 pounds)</p>
         <p>2 tablespoons vegetable oil</p>
         <p>1/2 teaspoon freshly ground black pepper</p>
         <p>1/4 teaspoon freshly ground black pepper</p>
         <p>1 (12-ounce) can pale lager</p>
-        <p>2 cups homemade or store-bought barbecue sauce (preferably Kraft Original Barbecue)</p>
+        <p>2 cups homemade or store-bought barbecue sauce (preferably Kraft Original Barbecue...)</p>
+        
     </div>
     
+    <div class="buttons"> 
+        <button id="directions"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+</svg> Directions</button>
+        <button id="save"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+  <path d="M8 6.236l-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+</svg> Save</button>
     <hr class="hline">
+    </div>
+</div>
+
+<div class="flexline"> 
+        <h3 class="flextext"> From Epicurius</h3> 
+        <p class="flextext">SEE ALL</p>
+        <svg class="flextext"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg>
+    
+</div>
+
 </section>
-<section class="small-image"></section>
+
+<section class="small-image">
+
+</section>
 </main>
     <script src="myjs.js"></script>
 </body>

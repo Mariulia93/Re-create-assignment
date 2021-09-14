@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 /* header */
 .top-nav{
     display: flex;
@@ -68,21 +73,30 @@
 }
 
 .firstsection{
-    align-content: center;
-    
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
+
+.firsttext{
+    align-self: center;
+}
+
 .boxes{
     display: flex;
-    margin: 0px;
-    padding: 0px;
-    align-items: center;
-    justify-content: space-around;
+    /* border: 2px solid black; */
+    align-content: center;
 }
+.box{
+    flex: 1;
+    text-align: center;
+}
+ 
 
 .ingredients {
     margin: 0px;
     padding: 0px;
-    flex-wrap: wrap
+   
 }
 .vline{
     border: 1px solid #EAEAEA;
@@ -90,4 +104,72 @@
 
 .hline{
     border: 1px solid #EAEAEA;
+}
+
+.ingredientsheader{
+    display: flex;
+    align-items: baseline;
+}
+.serves {
+    margin-left: auto;
+    margin-right: 1rem;
+    background-color: #E5E5E5;
+    color: #28272D;
+    border: none;
+    padding: 8px 27px;
+    align-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 22px;
+
+}
+/* buttons */
+#directions{
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #E5E5E5;
+    color: #28272D;
+    border: none;
+    padding: 9px 27px;
+    align-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 22px;
+    
+}
+
+#save {
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #CC1F0C;
+    color: white;
+    border: none;
+    padding: 9px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 22px;
+    
+}
+.icon {
+    display: inline-block;
+    vertical-align: bottom;
+}
+/* small-image section */
+
+.flexline{
+    display: flex;
+    align-content: center;
+}
+
+.flextext{
+    align-self: center;
+    margin-left: 1rem;
 }
